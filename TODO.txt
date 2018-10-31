@@ -8,3 +8,27 @@ Check/add:
 - tests data/
 - boilerplate left: tox, setup.cfg, run_travis_tests.sh, Dockerfile
 
+
+Fix:
+./extract_death.py
+Traceback (most recent call last):
+  File "./extract_death.py", line 222, in <module>
+    import biobankRead2.BiobankRead2 as UKBr2
+ModuleNotFoundError: No module named 'biobankRead2'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "./extract_death.py", line 227, in <module>
+    import BiobankRead2.BiobankRead2 as UKBr2
+ModuleNotFoundError: No module named 'BiobankRead2'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "./extract_death.py", line 231, in <module>
+    raise ImportError('UKBr could not be loaded properly')
+ImportError: UKBr could not be loaded properly
+
+depends where things end up and package name,leave as is for now
+
