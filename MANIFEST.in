@@ -19,7 +19,7 @@
 # contradicting docs.
 
 # Include main package and scripts:
-recursive-include project_name *.py
+recursive-include ukbio_read *.py
 
 # Include scripts in main directory, package info and INI files:
 include *.py
@@ -61,7 +61,14 @@ recursive-include pipeline* *.yml
 exclude .gitignore
 exclude .dir_bash_history
 exclude tests/.dir_bash_history
-exclude data_examples/.dir_bash_history
+exclude data/.dir_bash_history
+exclude scripts/README
+
+include *.txt
+include Dockerfile_template
+recursive-include data *.csv
+recursive-include data *.tsv
+
 
 # Extensions to include:
 #include *.pyxbld
