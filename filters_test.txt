@@ -1,4 +1,0 @@
-Age assessment>50
-Age assessment<70
-BMI>=23
-BMI<=30
