@@ -1,3 +1,21 @@
+.. include:: substitution_vars.rst
+
+.. GitHub doe not render rst substitutions
+
+.. copy across your travis "build..." logo so that it appears in your Github page
+
+.. .. image:: https://travis-ci.org/|github_user|/|project_name|.svg?branch=master
+    :target: https://travis-ci.org/|github_user|/|project_name|
+
+.. do the same for ReadtheDocs image:
+
+.. note that if your project is called project_Super readthedocs will convert
+.. it to project-super
+
+.. .. image:: https://readthedocs.org/projects/|project_name|/badge/?version=latest
+    :target: http://|project_name|.readthedocs.io/en/latest/?badge=latest
+    :alt: Documentation Status
+
 ################################
 Biobank Read - Bash callable 
 ################################
@@ -52,11 +70,19 @@ You must have the following installed to execute the files:
 - Python 3.6 or later
 - Pandas
 - BeautifulSoup4
-- re
 - Urllib3
 - Seaborn
 
 You are strongly adviced to use this package as part of an anaconda_ environment formatted to run python 3.6 with all the aformentioned dependencies.
+
+You can do, for example:
+
+.. code-block:: bash
+
+  conda create -n biobankread
+  conda activate biobankread
+  conda install -y python pandas beautifulSoup4 urllib3 seaborn
+  pip install git+git://github.com/|github_user|/|project_name|.git
 
 ############
 Usage
@@ -201,6 +227,28 @@ Acknowledgement
 BiobankRead was developed as part of the ITMAT Data Science Group and the Epidemiology & Biostatistics department at Imperial College London. 
 
 ################################
+Contribute
+################################
+
+- `Issue Tracker`_
+  
+.. _`Issue Tracker`: github.com/|github_user|/|project_name|/issues
+
+- `Source Code`_
+  
+.. _`Source Code`: github.com/|github_user|/|project_name|
+
+- Pull requests welcome!
+
+
+################################
+Support
+################################
+
+If you have any issues, pull requests, etc. please report them in the issue tracker.
+
+
+################################
 Thanks
 ################################
 Much gratitude is owed to Dr Bill Crum, who contributed to this project and co-authored its related papers
@@ -211,7 +259,7 @@ Much gratitude is owed to Dr Bill Crum, who contributed to this project and co-a
 
 .. _UKBiobank: http://www.ukbiobank.ac.uk/
 .. _portal: https://amsportal.ukbiobank.ac.uk/
-.. _zonodo: https://zenodo.org/badge/73500060.svg
+.. _zenodo: https://zenodo.org/badge/73500060.svg
 .. _testpy: https://github.com/saphir746/BiobankRead/blob/master/test-class.py
 .. _testHFpy: https://github.com/saphir746/BiobankRead/blob/master/test_HF.py
 .. _anaconda: https://conda.io/docs/user-guide/tasks/manage-environments.html

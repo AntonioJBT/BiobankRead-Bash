@@ -1,0 +1,10 @@
+
+Check/add:
+
+- command line parsing and help? docopt?
+- add hash bang python to scripts
+- test setup.py
+- test tests
+- tests data/
+- boilerplate left: tox, setup.cfg, run_travis_tests.sh, Dockerfile
+
